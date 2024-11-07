@@ -35,8 +35,7 @@ describe('Funcionalidade: Login', () => {
         cy.get('.woocommerce-form > .button').click()
         //Logout do usuário
         cy.get('.topbar-inner > :nth-child(1) > .list-inline > :nth-child(2) > a').click()
-        cy.get('#primary-menu > .menu-item-629 > a').should('exist')
-                
+        cy.get('#primary-menu > .menu-item-629 > a').should('exist')                
     });
 
 
