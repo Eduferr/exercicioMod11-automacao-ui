@@ -18,7 +18,7 @@ describe('Funcionalidade: Login', () => {
         cy.get('#username').type('edutestando@teste.com.br')
         cy.get('#password').type('teste@123')
         cy.get('.woocommerce-form > .button').click()
-        cy.get('.woocommerce-error').should('contain', 'Endereço de e-mail desconhecido.')
+        cy.get('.woocommerce-error').should('contain', 'Endereço de e-mail desconhecido')
     });
 
     it('Apresentar mensagem de erro para senha inválida', () => {
