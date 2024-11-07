@@ -9,8 +9,6 @@ describe('Funcionalidade: produto', () => {
     });
     
     it('Selecionar um produto da lista para compra', () => {
-
-
         cy.get('#primary-menu > .menu-item-629 > a').click()
         cy.get(':nth-child(3) > .page-numbers').click()
         cy.get('.product-block > .block-inner > .image > .product-image > .image-hover').eq(1).click()
@@ -21,10 +19,8 @@ describe('Funcionalidade: produto', () => {
         //Acessando o carrinho
         cy.get('.woocommerce-message > .button').click()
         cy.get('.checkout-button').click()
-        cy.get('.woocommerce-form-login-toggle > .woocommerce-info').should('exist')
-        
+        cy.get('.woocommerce-form-login-toggle > .woocommerce-info').should('exist')        
         //Detalhes do faturamento - Usuário não cadastrado
-
         var nome = faker.person.firstName()
         var sobrenome = faker.person.lastName()
         var empresa = faker.company.name()
@@ -46,15 +42,6 @@ describe('Funcionalidade: produto', () => {
         cy.get('#account_password').type('teste@1234')
         cy.get('#terms').click()
         cy.get('#place_order').click()
-        cy.get('.woocommerce-notice').should('contain', 'Obrigado. Seu pedido foi recebido.')
-
-       
-
-
-
-
-
-        
-        
+        cy.get('.woocommerce-notice').should('contain', 'Obrigado. Seu pedido foi recebido.')  
     });
 });
