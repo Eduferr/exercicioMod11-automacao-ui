@@ -44,4 +44,8 @@ describe('Funcionalidade: produto', () => {
         cy.get('#place_order').click()
         cy.get('.woocommerce-notice').should('contain', 'Obrigado. Seu pedido foi recebido.')  
     });
+
+    afterEach(() => {
+        cy.screenshot()
+    });
 });
