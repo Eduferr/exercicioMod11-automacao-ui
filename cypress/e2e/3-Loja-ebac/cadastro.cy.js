@@ -2,7 +2,7 @@
 
 import { faker } from '@faker-js/faker'
 
-describe('', () => {
+describe('Funcionalidade: Cadastro do usuário', () => {
     
     beforeEach(() => {
         cy.visit('http://lojaebac.ebaconline.art.br/')
