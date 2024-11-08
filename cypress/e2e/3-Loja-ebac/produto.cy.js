@@ -1,6 +1,6 @@
 /// <reference types='cypress'/>
 
-import { faker, NameModule } from '@faker-js/faker';
+import { faker } from '@faker-js/faker'
 
 describe('Funcionalidade: produto', () => {
 
